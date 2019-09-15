@@ -73,7 +73,7 @@ toggleText = () => {
   const pcBtn = document.querySelector("#pc-btn")
   const list = document.querySelector(".req-list")
 
-  pcBtn.addEventListener("focus", () => {
+  pcBtn.addEventListener("click", () => {
     macBtn.style.borderBottom = "2px solid white"
     pcBtn.style.borderBottom = "2px solid"
     list.innerHTML = "<li>Windows 7 (SP1), Windows 8 or Windows 10 (64-bit)</li> \
@@ -85,7 +85,7 @@ toggleText = () => {
     <li>Approximately 3 GB disk space on the system drive for the basic installation (8 GB free disk space recommended)</li> \
     <li>Up to 76 GB disk space for additionally available sound content</li>"
   })
-  macBtn.addEventListener("focus", () => {
+  macBtn.addEventListener("click", () => {
     pcBtn.style.borderBottom = "2px solid white"
     macBtn.style.borderBottom = "2px solid"
     list.innerHTML = "<li>OS X 10.11.6 or later</li> \
